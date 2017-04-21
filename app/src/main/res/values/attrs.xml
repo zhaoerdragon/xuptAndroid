@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingView">
+        <attr name="title" format="string"/>
+        <attr name="titleColot" format="color"/>
+        <attr name="titleSize" format="integer"/>
+    </declare-styleable>
+
+</resources>
