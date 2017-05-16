@@ -13,6 +13,7 @@ public class RegularUtils {
     private RegularUtils(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
+
     /**
      * 判断一个字符串是不是由英文构成
      */
