@@ -90,6 +90,7 @@ public class BitmapUtils {
         //到的缩放后的图片
         bmp = BitmapFactory.decodeFile(filePath, opt);
         return bmp;
+        
     }
 
 }
