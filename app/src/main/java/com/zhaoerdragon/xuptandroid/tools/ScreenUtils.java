@@ -17,7 +17,7 @@ public class ScreenUtils
     /**
      * 工具类不能被初始化
      */
-    private ScreenUtils()
+    public ScreenUtils()
     {
         throw new UnsupportedOperationException("cannot be instantiated");
     }

@@ -21,7 +21,7 @@ public class FileUtils {
     /**
      * 工具类不能被初始化
      */
-    private FileUtils(){
+    public FileUtils(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

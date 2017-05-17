@@ -10,7 +10,7 @@ public class RegularUtils {
     /**
      * 工具类不能初始化
      */
-    private RegularUtils(){
+    public RegularUtils(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

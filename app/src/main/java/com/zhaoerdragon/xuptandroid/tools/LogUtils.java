@@ -13,7 +13,7 @@ public class LogUtils {
     /**
      * 工具类不能被初始化
      */
-    private LogUtils()
+    public LogUtils()
     {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
