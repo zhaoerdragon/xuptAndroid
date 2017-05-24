@@ -46,6 +46,8 @@ public class StatusUtils {
             ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup
                     .LayoutParams.MATCH_PARENT, ScreenUtils.getStatusHeight(activity.getApplicationContext()));
             viewGroup.addView(statsuBarView, layoutParams);
+
+            return true;
         }
         return false;
     }
