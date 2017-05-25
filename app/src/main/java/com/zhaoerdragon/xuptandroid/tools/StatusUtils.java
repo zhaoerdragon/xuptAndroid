@@ -29,6 +29,8 @@ public class StatusUtils {
 
     /**
      * 改变状态栏的颜色，系统版本必须在19及以上。
+     * 此方法使用时需要在 android:theme 属性中加上 <item name ="android:fitsSystemWindows">true</item>这一条。
+     * 否则整个内容布局会拓展至状态栏，造成拉伸效果
      * @param activity
      * @param color
      * @return
