@@ -73,4 +73,14 @@ public class LogUtils {
             Log.i(tag, msg);
     }
 
+    /**
+     * 方便的打印出每个的值
+     * @param id
+     * @param msg
+     */
+    public static void iInt(int id, String msg) {
+        if (isDebug) {
+            LogUtils.i("第 " + id + " 的值为" + msg);
+        }
+    }
 }

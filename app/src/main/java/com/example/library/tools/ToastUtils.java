@@ -35,7 +35,7 @@ public class ToastUtils {
      */
     public static void toastRectShort(Context context, String string) {
 
-        if (isShown) {
+        if (isShown && (context != null)) {
             /**
              * 用代码来动态生成布局，降低各个组件之间的耦合性。
              */
@@ -48,12 +48,12 @@ public class ToastUtils {
             TextView textView = new TextView(context);
             textView.setText(string);
             textView.setTextColor(Color.WHITE);
-            textView.setTextSize(16);
-            textView.setPadding(5,5,5,5);
+            textView.setTextSize(17);
+            textView.setPadding(7, 7, 7, 7);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout
                     .LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-            toastView.addView(textView,layoutParams);
+            toastView.addView(textView, layoutParams);
 
             final Toast toast = new Toast(context);
             toast.setGravity(Gravity.BOTTOM, 0, ScreenUtils.getScreenWidth(context) / 6);
@@ -72,7 +72,7 @@ public class ToastUtils {
      */
     public static void toastRectShort(Context context, String string,int time) {
 
-        if (isShown) {
+        if (isShown && (context != null)) {
             /**
              * 用代码来动态生成布局，降低各个组件之间的耦合性。
              */
@@ -85,12 +85,12 @@ public class ToastUtils {
             TextView textView = new TextView(context);
             textView.setText(string);
             textView.setTextColor(Color.WHITE);
-            textView.setTextSize(16);
-            textView.setPadding(5,5,5,5);
+            textView.setTextSize(17);
+            textView.setPadding(7, 7, 7, 7);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout
                     .LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
-            toastView.addView(textView,layoutParams);
+            toastView.addView(textView, layoutParams);
 
             final Toast toast = new Toast(context);
             toast.setGravity(Gravity.BOTTOM, 0, ScreenUtils.getScreenWidth(context) / 6);
@@ -102,7 +102,7 @@ public class ToastUtils {
                 public void run() {
                     toast.cancel();
                 }
-            },time);
+            }, time);
         }
     }
 
