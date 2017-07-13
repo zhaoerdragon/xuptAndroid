@@ -45,7 +45,7 @@ public class DateUtils {
      * 返回现在的小时
      * @return
      */
-    public static int getHour() {
+    public static int getIntHour() {
         Calendar calendar = Calendar.getInstance();
         return calendar.get(Calendar.HOUR_OF_DAY);
     }
