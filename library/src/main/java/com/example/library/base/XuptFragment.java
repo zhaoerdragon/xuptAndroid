@@ -3,9 +3,8 @@ package com.example.library.base;
 import android.app.Fragment;
 
 /**
- * Created by zhaohacker on 17-4-21.
+ * Fragment的基本类型
  */
-
 public class XuptFragment extends Fragment{
 
 }

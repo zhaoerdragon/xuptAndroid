@@ -1,18 +1,10 @@
 package com.example.library.tools;
 
 
-import android.graphics.Typeface;
-import android.support.annotation.NonNull;
-
-import com.example.library.bean.DataBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 /**
  * Gson解析工具类
