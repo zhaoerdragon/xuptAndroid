@@ -41,13 +41,13 @@ public class GsonUtils {
      * @param jsonString
      * @return
      */
-    public static ArrayList<DataBean> getListDataByGson(String jsonString) {
+    public static <T> ArrayList<T> getListDataByGson(String jsonString) {
 
-        ArrayList<DataBean> arrayList = null;
+        ArrayList<T> arrayList = null;
         try {
             arrayList = new ArrayList<>();
             Gson gson = new Gson();
-            arrayList = gson.fromJson(jsonString, new TypeToken<ArrayList<DataBean>>() {
+            arrayList = gson.fromJson(jsonString, new TypeToken<ArrayList<T>>() {
             }.getType());
         } catch (Exception e) {
             e.printStackTrace();
