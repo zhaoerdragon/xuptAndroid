@@ -2,13 +2,17 @@ package com.example.library.tools;
 
 
 import android.graphics.Typeface;
+import android.support.annotation.NonNull;
 
 import com.example.library.bean.DataBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 /**
  * Gson解析工具类
@@ -37,22 +41,17 @@ public class GsonUtils {
     }
 
     /**
-     * 解析得到的JsonArray数据，并将其转换为数组
+     * 将Json字符串转变成为ArrayList对象
+     *
      * @param jsonString
+     * @param <T>
      * @return
      */
-    public static <T> ArrayList<T> getListDataByGson(String jsonString) {
-
-        ArrayList<T> arrayList = null;
-        try {
-            arrayList = new ArrayList<>();
-            Gson gson = new Gson();
-            arrayList = gson.fromJson(jsonString, new TypeToken<ArrayList<T>>() {
-            }.getType());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return arrayList;
+    public static <T> List<T> getListInfo(String jsonString) {
+        Gson gson = new Gson();
+        List<T> tList;
+        tList = gson.fromJson(jsonString, new TypeToken<List<T>>() {
+        }.getType());
+        return tList;
     }
-
 }
