@@ -8,9 +8,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 通过自己的方式显示datas，并可以水平滑动
+ * 折线图
  */
-
 public class HorizontalScrollView extends View {
 
     private int[] datas = new int[10];
