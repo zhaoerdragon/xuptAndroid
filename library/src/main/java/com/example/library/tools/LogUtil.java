@@ -44,6 +44,12 @@ public class LogUtil {
             Log.v(TAG, msg);
     }
 
+    public static void w(String msg) {
+        if (isDebug) {
+            Log.w(TAG, msg);
+        }
+    }
+
     public static void i(String tag, String msg) {
         if (isDebug)
             Log.i(tag, msg);
@@ -51,27 +57,52 @@ public class LogUtil {
 
     public static void d(String tag, String msg) {
         if (isDebug)
-            Log.i(tag, msg);
+            Log.d(tag, msg);
     }
 
     public static void e(String tag, String msg) {
         if (isDebug)
-            Log.i(tag, msg);
+            Log.e(tag, msg);
     }
 
     public static void v(String tag, String msg) {
         if (isDebug)
-            Log.i(tag, msg);
+            Log.v(tag, msg);
     }
 
-    /**
-     * 方便的打印出每个的值
-     * @param id
-     * @param msg
-     */
-    public static void iInt(int id, String msg) {
+    public static void w(String tag, String msg) {
         if (isDebug) {
-            LogUtil.i("第 " + id + " 的值为" + msg);
+            Log.w(tag, msg);
+        }
+    }
+
+    public static void i(Object[] arrayObject) {
+        for (int i = 0; i < arrayObject.length; i++) {
+            i("第 " + (i + 1) + " 个的数据是: " + arrayObject[i].toString());
+        }
+    }
+
+    public static void d(Object[] arrayObject) {
+        for (int i = 0; i < arrayObject.length; i++) {
+            d("第 " + (i + 1) + " 个的数据是: " + arrayObject[i].toString());
+        }
+    }
+
+    public static void e(Object[] arrayObject) {
+        for (int i = 0; i < arrayObject.length; i++) {
+            e("第 " + (i + 1) + " 个的数据是: " + arrayObject[i].toString());
+        }
+    }
+
+    public static void v(Object[] arrayObject) {
+        for (int i = 0; i < arrayObject.length; i++) {
+            v("第 " + (i + 1) + " 个的数据是: " + arrayObject[i].toString());
+        }
+    }
+
+    public static void w(Object[] arrayObject){
+        for (int i = 0; i < arrayObject.length; i++) {
+            w("第 " + (i + 1) + " 个的数据是: " + arrayObject[i].toString());
         }
     }
 }

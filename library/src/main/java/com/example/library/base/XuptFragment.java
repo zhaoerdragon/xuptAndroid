@@ -1,10 +1,11 @@
 package com.example.library.base;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 /**
- * Fragment的基本类型
+ * BaseFragment,封装与业务无关的共用逻辑
  */
-public class XuptFragment extends Fragment{
+public class XuptFragment extends Fragment {
+
 
 }
