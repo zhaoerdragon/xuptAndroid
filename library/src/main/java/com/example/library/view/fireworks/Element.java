@@ -1,4 +1,4 @@
-package com.example.library.view.FireworksV;
+package com.example.library.view.fireworks;
 
 /**
  * 每个小点的属性

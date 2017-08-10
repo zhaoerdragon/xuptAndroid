@@ -14,7 +14,7 @@ import java.util.TimerTask;
 /**
  * 自定义Toast工具类
  */
-public class ToastUtils {
+public class ToastUtil {
 
     /**
      * ToastUtils是否显示，默认为显示
@@ -24,7 +24,7 @@ public class ToastUtils {
     /**
      * 工具类不能被初始化
      */
-    public ToastUtils() {
+    public ToastUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
@@ -56,7 +56,7 @@ public class ToastUtils {
             toastView.addView(textView, layoutParams);
 
             final Toast toast = new Toast(context);
-            toast.setGravity(Gravity.BOTTOM, 0, ScreenUtils.getScreenWidth(context) / 6);
+            toast.setGravity(Gravity.BOTTOM, 0, ScreenUtil.getScreenWidth(context) / 6);
             toast.setDuration(Toast.LENGTH_SHORT);
             toast.setView(toastView);
             toast.show();
@@ -93,7 +93,7 @@ public class ToastUtils {
             toastView.addView(textView, layoutParams);
 
             final Toast toast = new Toast(context);
-            toast.setGravity(Gravity.BOTTOM, 0, ScreenUtils.getScreenWidth(context) / 6);
+            toast.setGravity(Gravity.BOTTOM, 0, ScreenUtil.getScreenWidth(context) / 6);
             toast.setDuration(Toast.LENGTH_LONG);
             toast.setView(toastView);
             toast.show();

@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.example.library.tools.ScreenUtils;
+import com.example.library.tools.ScreenUtil;
 
 
 /**
@@ -78,7 +78,7 @@ public class SettingView extends View {
         if(mode == MeasureSpec.EXACTLY){
             result = size;
         }else {
-            result = ScreenUtils.getScreenWidth(mContext);
+            result = ScreenUtil.getScreenWidth(mContext);
             if(mode == MeasureSpec.AT_MOST){
                 result = Math.min(result, size);
             }

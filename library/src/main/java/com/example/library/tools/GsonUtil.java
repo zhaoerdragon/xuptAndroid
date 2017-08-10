@@ -9,12 +9,12 @@ import java.util.List;
 /**
  * Gson解析工具类
  */
-public class GsonUtils {
+public class GsonUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public GsonUtils(){
+    public GsonUtil(){
         throw new UnsupportedOperationException("cannot be instananed");
     }
 

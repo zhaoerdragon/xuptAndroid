@@ -16,12 +16,12 @@ import java.io.ByteArrayOutputStream;
 /**
  * Bitmap工具类
  */
-public class BitmapUtils {
+public class BitmapUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public BitmapUtils(){
+    public BitmapUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

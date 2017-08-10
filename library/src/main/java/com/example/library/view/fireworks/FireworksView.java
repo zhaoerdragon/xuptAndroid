@@ -1,4 +1,4 @@
-package com.example.library.view.FireworksV;
+package com.example.library.view.fireworks;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -6,12 +6,10 @@ import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.CursorAdapter;
 import android.widget.EditText;
 
-import com.example.library.tools.CursorUtils;
+import com.example.library.tools.CursorUtil;
 
 import java.util.ArrayList;
 
@@ -56,7 +54,7 @@ public class FireworksView extends View {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                float[] cursorPlace = CursorUtils.getCursorPosition(mView, mEditText);
+                float[] cursorPlace = CursorUtil.getCursorPosition(mView, mEditText);
                 launchAction(cursorPlace[0], cursorPlace[1], i1 == 0 ? -1 : 1);
             }
 

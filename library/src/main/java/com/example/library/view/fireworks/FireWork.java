@@ -1,4 +1,4 @@
-package com.example.library.view.FireworksV;
+package com.example.library.view.fireworks;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

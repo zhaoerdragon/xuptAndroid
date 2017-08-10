@@ -5,12 +5,12 @@ import java.util.Calendar;
 /**
  * 日期数据的工具类
  */
-public class DateUtils {
+public class DateUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public DateUtils() {
+    public DateUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

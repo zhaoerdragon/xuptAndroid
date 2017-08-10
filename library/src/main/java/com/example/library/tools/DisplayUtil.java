@@ -5,12 +5,12 @@ import android.content.Context;
 /**
  * 将dp,sp转换为px的工具类
  */
-public class DisplayUtils {
+public class DisplayUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public DisplayUtils(){
+    public DisplayUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

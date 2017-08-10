@@ -14,12 +14,12 @@ import java.io.FileOutputStream;
 /**
  * 文件工具类
  */
-public class FileUtils {
+public class FileUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public FileUtils(){
+    public FileUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

@@ -14,12 +14,11 @@ import java.lang.reflect.Method;
 /**
  * 光标工具类
  */
-public class CursorUtils {
+public class CursorUtil {
 
     /**
      * 光标工具类，获取当前光标的位置
      * float[0]为x轴坐标，float[1]为y轴坐标
-     * 我是真的不太明白
      * @param view
      * @param editText
      * @return

@@ -5,12 +5,12 @@ import java.util.regex.Pattern;
 /**
  * 正则表达式工具类
  */
-public class RegularUtils {
+public class RegularUtil {
 
     /**
      * 工具类不能初始化
      */
-    public RegularUtils(){
+    public RegularUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 

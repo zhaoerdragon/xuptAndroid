@@ -11,13 +11,13 @@ import android.view.WindowManager;
 /**
  * 屏幕工具类
  */
-public class ScreenUtils
+public class ScreenUtil
 {
 
     /**
      * 工具类不能被初始化
      */
-    public ScreenUtils()
+    public ScreenUtil()
     {
         throw new UnsupportedOperationException("cannot be instantiated");
     }

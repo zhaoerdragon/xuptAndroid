@@ -9,12 +9,12 @@ import android.view.WindowManager;
 /**
  * 状态栏工具类
  */
-public class StatusUtils {
+public class StatusUtil {
 
     /**
      * 工具类不能被初始化
      */
-    public StatusUtils() {
+    public StatusUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
@@ -38,7 +38,7 @@ public class StatusUtils {
             statsuBarView.setBackgroundColor(color);
             //将内容栏拓展为整个屏幕
             ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup
-                    .LayoutParams.MATCH_PARENT, ScreenUtils.getStatusHeight(activity.getApplicationContext()));
+                    .LayoutParams.MATCH_PARENT, ScreenUtil.getStatusHeight(activity.getApplicationContext()));
             viewGroup.addView(statsuBarView, layoutParams);
 
             return true;
