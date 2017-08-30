@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.PixelFormat;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Base64;
 import android.view.Display;
@@ -23,6 +24,44 @@ public class BitmapUtil {
      */
     public BitmapUtil(){
         throw new UnsupportedOperationException("cannot be instantiated");
+    }
+
+    /**
+     * 将Bitmap转换成byte数组
+     * @param bitmap
+     * @return
+     */
+    public static byte[] bitmapToByte(Bitmap bitmap) {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+        return byteArrayOutputStream.toByteArray();
+    }
+
+    /**
+     * 将byte数组转换为Bitmap
+     * @param bytes
+     * @return
+     */
+    public static Bitmap byteToBitmap(byte[] bytes) {
+        return (bytes == null || bytes.length == 0) ? null : BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+    }
+
+    /**
+     * 将Drawable转换为Bitmap
+     * @param drawable
+     * @return
+     */
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        return drawable == null ? null : ((BitmapDrawable) drawable).getBitmap();
+    }
+
+    /**
+     * 讲Bitmap转换为Drawable
+     * @param bitmap
+     * @return
+     */
+    public static Drawable bitmapToDrawable(Bitmap bitmap) {
+        return bitmap == null ? null : new BitmapDrawable(bitmap);
     }
 
     /**

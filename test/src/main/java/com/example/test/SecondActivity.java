@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- *
+ * 第二个Activity
  */
 public class SecondActivity extends Activity {
 
