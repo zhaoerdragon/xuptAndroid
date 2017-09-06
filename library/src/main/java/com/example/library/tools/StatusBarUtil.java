@@ -578,5 +578,6 @@ public class StatusBarUtil {
         blue = (int) (blue * a + 0.5);
         return 0xff << 24 | red << 16 | green << 8 | blue;
     }
+    
 
 }
