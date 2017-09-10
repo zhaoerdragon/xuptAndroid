@@ -13,11 +13,6 @@ import com.example.library.tools.CursorUtil;
 
 import java.util.ArrayList;
 
-/**
- * 烟花自定义控件
- * 这个控件我是在郭霖的微信共众号上看到的，但是我的理解不是特别的深刻。
- * 所有有很多代码都是我抄的,:)
- */
 public class FireworksView extends View {
 
     private View mView;

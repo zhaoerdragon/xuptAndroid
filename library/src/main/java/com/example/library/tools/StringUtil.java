@@ -12,5 +12,4 @@ public class StringUtil {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
-
 }

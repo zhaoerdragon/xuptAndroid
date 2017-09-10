@@ -2,8 +2,12 @@ package com.example.test;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 
+import com.example.library.tools.StatusBarUtil;
+import com.example.library.view.StatusBarView;
 import com.example.library.view.fireworks.FireworksView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,5 +24,6 @@ public class MainActivity extends AppCompatActivity {
         mEditText = (EditText) findViewById(R.id.activity_main_edittext);
 
         fireworksView.bindEdittext(mEditText);
+
     }
 }
