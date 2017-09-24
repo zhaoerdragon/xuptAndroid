@@ -8,17 +8,10 @@ import android.graphics.Typeface;
  * 字体公共类
  * 将字体内部的操作封装起来，只有一个暴露给外部的接口
  */
-public class TypefaceCommon {
+public class TypefaceUtil {
 
-    /**
-     * 微软雅黑
-     */
-    private static Typeface yaheiTypeface;
-
-    /**
-     * 方正兰亭纤黑
-     */
-    private static Typeface lantingTypeface;
+    private static Typeface yaheiTypeface;          //微软雅黑
+    private static Typeface lantingTypeface;        //方正兰亭纤黑
 
     /**
      * 初始化字体,建议在应用刚开启时使用
@@ -28,14 +21,13 @@ public class TypefaceCommon {
             yaheiTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/微软雅黑.TTF");
             lantingTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/方正兰亭纤黑.TTF");
         }
-
     }
 
     /**
      * 获取微软雅黑字体
      * @return
      */
-    public static Typeface getYaheiTypeface() {
+    public static Typeface getYahei() {
         if (yaheiTypeface != null) {
             return yaheiTypeface;
         }
@@ -46,10 +38,11 @@ public class TypefaceCommon {
      * 获取方正兰亭纤黑字体
      * @return
      */
-    public static Typeface getLantingTypeface() {
+    public static Typeface getLanting() {
         if (lantingTypeface != null) {
             return lantingTypeface;
         }
         return null;
     }
+
 }
